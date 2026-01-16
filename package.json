@@ -13,9 +13,11 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.7",
     "@mui/material": "^6.1.7",
+    "@mui/x-charts": "^8.25.0",
+    "date-fns": "^4.1.0",
     "next": "15.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.71.1"
   }
 }
-
