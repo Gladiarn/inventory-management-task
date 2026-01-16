@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { ThemeProvider } from "@emotion/react";
 import { CssBaseline } from "@mui/material";
 import { lightTheme, darkTheme } from "../theme";
+import Layout from "@/components/Layout";
 
 export default function App({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,11 +24,9 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Component
-        {...pageProps}
-        darkMode={darkMode}
-        toggleDarkMode={() => setDarkMode(!darkMode)}
-      />
+      <Layout darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)}>
+        <Component {...pageProps} />
+      </Layout>
     </ThemeProvider>
   );
 }
