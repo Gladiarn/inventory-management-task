@@ -18,7 +18,7 @@ export default function Layout({ children, darkMode, toggleDarkMode }) {
           toggleDarkMode={toggleDarkMode}
           toggleSidebar={toggleSidebar}
         />
-        <main style={{ flex: 1, padding: "20px" }}>
+        <main style={{ flex: 1, padding: "20px" ,backgroundColor: '#EEEEEE' }}>
           {children}
         </main>
       </div>

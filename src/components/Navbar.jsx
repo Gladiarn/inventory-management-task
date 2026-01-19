@@ -8,8 +8,10 @@ export default function Navbar({ darkMode, toggleDarkMode, toggleSidebar }) {
     <AppBar
       position="static"
       sx={{
-        backgroundColor: (theme) => (theme.palette.mode === 'dark' ? theme.palette.background.paper : theme.palette.primary.main),
-        color: '#FFFFFF',
+        backgroundColor: (theme) => (theme.palette.mode === 'dark' ? theme.palette.background.paper : "#FFFFFF"),
+        color: (theme) => (theme.palette.mode === 'dark' ? "#FFFFFF" : theme.palette.primary.main),
+        width: '100%',
+        transition: 'width 0.3s ease',
       }}
     >
       <Toolbar>
