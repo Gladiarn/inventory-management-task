@@ -59,6 +59,7 @@ export default function Home() {
 
   return (
     <>
+    
 
       <Container sx={{ mt: 4, mb: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
@@ -67,39 +68,7 @@ export default function Home() {
 
         {/* Summary Cards */}
         <Grid container spacing={3} sx={{ mb: 4 }}>
-          <Grid item xs={12} sm={4}>
-            <Card>
-              <CardContent>
-                <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-                  <CategoryIcon sx={{ mr: 1, color: "primary.main" }} />
-                  <Typography variant="h6">Total Products</Typography>
-                </Box>
-                <Typography variant="h3">{products.length}</Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card>
-              <CardContent>
-                <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-                  <WarehouseIcon sx={{ mr: 1, color: "primary.main" }} />
-                  <Typography variant="h6">Warehouses</Typography>
-                </Box>
-                <Typography variant="h3">{warehouses.length}</Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card>
-              <CardContent>
-                <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-                  <InventoryIcon sx={{ mr: 1, color: "primary.main" }} />
-                  <Typography variant="h6">Total Inventory Value</Typography>
-                </Box>
-                <Typography variant="h3">${totalValue.toFixed(2)}</Typography>
-              </CardContent>
-            </Card>
-          </Grid>
+          {/* cards goes here */}
         </Grid>
 
         {/* Inventory Overview Table */}
